@@ -121,7 +121,7 @@ has enlightened my mind when it comes to SQL.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ❓ FAQ <a name="faq"></a>
-
+-----------------------------
 - **[How do I access this database?]**
 
   - [No, it is a private DB and the source code aren't meant to be shared publicly.]

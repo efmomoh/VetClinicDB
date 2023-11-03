@@ -1,4 +1,4 @@
-        ###VET CLINIC DB
+                  VET CLINIC DB
 
 <a name="readme-top"></a>
 
@@ -30,13 +30,9 @@
 
 > A veterinary clinic database for managing animal records using SQL which typically consists of table to store information about animals, their ids, names, date_of_births, escape_attempts, neutered, and weight_kg.
 
-**[VetClinicDB]** is a standard SQL database for overseeing animal records in a veterinary clinic typically includes a table that stores data concerning animals, such as their IDs, names, dates of birth, escape incidents, neutering status, and weight.
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> SQL stands for "Structured Query Language." It is a domain-specific programming language used for managing and manipulating relational databases. SQL allows users to perform tasks such as querying data, updating data, inserting new data, and deleting data in a database. It provides a standardized way to interact with databases, making it a fundamental tool for working with data in various applications, from web development to business intelligence and data analysis.
 
 <summary>Database</summary>
   <ul>
@@ -47,21 +43,9 @@
 <!-- Features -->
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Create a DB]**
 - **[Create Table]**
 - **[Insert Values]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,7 +58,6 @@
 ### Prerequisites
 
 In order to run this project you need:
-
 
 Example command:
 
@@ -93,14 +76,9 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/efmomoh/VetClinicDB.git
-  
+  git clone https://github.com/efmomoh/VetClinicDB.git 
 ```
--
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -113,8 +91,6 @@ Example commands:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Create Multiple tables]**
@@ -122,8 +98,6 @@ Example commands:
 - [ ] **[Add primary and foreign keys]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -133,15 +107,11 @@ Feel free to check the [issues page](https://github.com/efmomoh/VetClinicDB/issu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project kindly give it a star!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -150,18 +120,14 @@ has enlightened my mind when it comes to SQL.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
 ## ❓ FAQ <a name="faq"></a>
 
 - **[How do I access this database?]**
 
   - [No, it is a private DB and the source code aren't meant to be shared publicly.]
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 

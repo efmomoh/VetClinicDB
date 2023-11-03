@@ -40,7 +40,6 @@
   </ul>
 </details>
 
-<!-- Features -->
 ### Key Features <a name="key-features"></a>
 
 - **[Create a DB]**
@@ -48,8 +47,6 @@
 - **[Insert Values]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -67,7 +64,6 @@ Example command:
     Internet Connectivity
     Download, install, and setup PostgreSQL
 ```
-
 ### Setup
 
 Clone this repository to your desired folder:

@@ -44,7 +44,7 @@
 
 - **[Create a DB]**
 - **[Create Table]**
-- **[Insert Values]**
+- **[Insert animal Values/Data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

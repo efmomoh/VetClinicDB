@@ -39,3 +39,34 @@ ALTER TABLE animals ADD COLUMN species_id INT, ADD CONSTRAINT fk_species_id FORE
 
 -- Step 5: Add a new column "owner_id" as a foreign key referencing the "owners" table
 ALTER TABLE animals ADD COLUMN owner_id INT, ADD CONSTRAINT fk_owner_id FOREIGN KEY (owner_id) REFERENCES owners(id);
+
+
+-- TASK FOUR: 
+CREATE TABLE vets (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT,
+    date_of_graduation DATE
+);
+
+CREATE TABLE specializations (
+    vet_id INT,
+    species_id INT,
+    PRIMARY KEY (vet_id, species_id),
+    FOREIGN KEY (vet_id) REFERENCES vets(id),
+    FOREIGN KEY (species_id) REFERENCES species(id)
+);
+
+-- ADD PRIMARY KEY TO ANIMALS TABLE 
+ALTER TABLE animals ADD PRIMARY KEY (id);
+
+-- Create the "visits" table for the many-to-many relationship between "animals" and "vets"
+CREATE TABLE visits (
+    vet_id INT,
+    animal_id INT,
+    visit_date DATE,
+    PRIMARY KEY (vet_id, animal_id, visit_date),
+    FOREIGN KEY (vet_id) REFERENCES vets(id),
+    FOREIGN KEY (animal_id) REFERENCES animals(id)
+);
+

@@ -47,3 +47,40 @@ SET owner_id = (
     WHEN name IN ('Angemon', 'Boarmon') THEN (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
   END
 );
+
+
+-- VISITS TASK :
+INSERT INTO vets (name, age, date_of_graduation) VALUES
+('William Tatcher', 45, '2000-04-23'),
+('Maisy Smith', 26, '2019-01-17'),
+('Stephanie Mendez', 64, '1981-05-04'),
+('Jack Harkness', 38, '2008-06-08');
+
+INSERT INTO specializations (vet_id, species_id) VALUES
+(1, 1),  -- William Tatcher specialized in Pokemon
+(3, 1),  -- Stephanie Mendez specialized in Pokemon
+(3, 2),  -- Stephanie Mendez specialized in Digimon
+(4, 2);  -- Jack Harkness specialized in Digimon
+
+INSERT INTO visits (vet_id, animal_id, visit_date) VALUES
+(1, 1, '2020-05-24'),    -- Agumon visited William Tatcher
+(3, 1, '2020-07-22'),    -- Agumon visited Stephanie Mendez
+(4, 2, '2021-02-02'),    -- Gabumon visited Jack Harkness
+(2, 3, '2020-01-05'),    -- Pikachu visited Maisy Smith
+(2, 3, '2020-03-08'),    -- Pikachu visited Maisy Smith
+(2, 3, '2020-05-14'),    -- Pikachu visited Maisy Smith
+(3, 4, '2021-05-04'),    -- Devimon visited Stephanie Mendez
+(4, 5, '2021-02-24'),    -- Charmander visited Jack Harkness
+(1, 6, '2019-12-21'),    -- Plantmon visited William Tatcher
+(1, 6, '2020-08-10'),    -- Plantmon visited William Tatcher
+(2, 6, '2021-04-07'),    -- Plantmon visited Maisy Smith
+(3, 7, '2019-09-29'),    -- Squirtle visited Stephanie Mendez
+(4, 8, '2020-10-03'),    -- Angemon visited Jack Harkness
+(4, 8, '2020-11-04'),    -- Angemon visited Jack Harkness
+(2, 9, '2019-01-24'),    -- Boarmon visited Maisy Smith
+(2, 9, '2019-05-15'),    -- Boarmon visited Maisy Smith
+(2, 9, '2020-02-27'),    -- Boarmon visited Maisy Smith
+(2, 9, '2020-08-03'),    -- Boarmon visited Maisy Smith
+(3, 10, '2020-05-24'),   -- Blossom visited Stephanie Mendez
+(1, 10, '2021-01-11');   -- Blossom visited William Tatcher
+

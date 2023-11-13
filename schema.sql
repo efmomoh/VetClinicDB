@@ -70,3 +70,5 @@ CREATE TABLE visits (
     FOREIGN KEY (animal_id) REFERENCES animals(id)
 );
 
+-- ADD email column to owners :
+ALTER TABLE owners DROP COLUMN email VARCHAR(120);

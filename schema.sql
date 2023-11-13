@@ -64,8 +64,8 @@ ALTER TABLE animals ADD PRIMARY KEY (id);
 CREATE TABLE visits (
     vet_id INT,
     animal_id INT,
-    visit_date DATE,
-    PRIMARY KEY (vet_id, animal_id, visit_date),
+    date_of_visit DATE,
+    PRIMARY KEY (vet_id, animal_id, date_of_visit),
     FOREIGN KEY (vet_id) REFERENCES vets(id),
     FOREIGN KEY (animal_id) REFERENCES animals(id)
 );

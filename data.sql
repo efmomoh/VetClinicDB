@@ -62,7 +62,7 @@ INSERT INTO specializations (vet_id, species_id) VALUES
 (3, 2),  -- Stephanie Mendez specialized in Digimon
 (4, 2);  -- Jack Harkness specialized in Digimon
 
-INSERT INTO visits (vet_id, animal_id, visit_date) VALUES
+INSERT INTO visits (vet_id, animal_id, date_of_visit) VALUES
 (1, 1, '2020-05-24'),    -- Agumon visited William Tatcher
 (3, 1, '2020-07-22'),    -- Agumon visited Stephanie Mendez
 (4, 2, '2021-02-02'),    -- Gabumon visited Jack Harkness

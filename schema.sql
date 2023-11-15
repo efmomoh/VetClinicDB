@@ -62,13 +62,18 @@ ALTER TABLE animals ADD PRIMARY KEY (id);
 
 -- Create the "visits" table for the many-to-many relationship between "animals" and "vets"
 CREATE TABLE visits (
+    id      INT GENERATED ALWAYS AS IDENTITY,
     vet_id INT,
     animal_id INT,
     date_of_visit DATE,
-    PRIMARY KEY (vet_id, animal_id, date_of_visit),
+    PRIMARY KEY (vet_id, animal_id, date_of_visit, id),
     FOREIGN KEY (vet_id) REFERENCES vets(id),
     FOREIGN KEY (animal_id) REFERENCES animals(id)
 );
 
 -- ADD email column to owners :
 ALTER TABLE owners DROP COLUMN email VARCHAR(120);
+--  create index for performance query 
+CREATE INDEX animal_id_asc ON visits(animal_id ASC);
+CREATE INDEX vet_id_asc ON visits(vet_id ASC);
+CREATE INDEX email_asc ON owners(email ASC);
